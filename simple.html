@@ -1,0 +1,89 @@
+<form>
+  <p>
+    <fieldset>
+      <legend>Do you have a driver's license?<abbr title="This field is mandatory" aria-label="required">*</abbr>
+      </legend>
+      
+      <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+      <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+    </fieldset>
+  </p>
+  <p>
+    <label for="n1">How old are you?</label>
+    
+    <input type="number" min="18" max="120" step="1" id="n1" name="age"
+           pattern="\d+">
+  </p>
+  <p>
+    <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="text" id="t1" name="fruit" list="l1" required
+           pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+    <datalist id="l1">
+      <option>Banana</option>
+      <option>Cherry</option>
+      <option>Apple</option>
+      <option>Strawberry</option>
+      <option>Lemon</option>
+      <option>Orange</option>
+    </datalist>
+  </p>
+
+  Country:<select id="country">
+      <option disabled selected value> -- select a country -- </option>
+      <option>India</option>
+      <option>Canada</option>
+      <option>Australia</option>
+      <option>Africa</option>
+      <option>England</option>
+      <option>Asia</option>
+    </select>
+
+
+  <p>
+    <label for="t1">Where do you live?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="text" id="t1" name="city" list="l2" required
+           pattern="[Dd]elhi|[Aa]hmedabad|[Cc]hhatisgarh|[Pp]unjab|[Uu]ttrakhand|[Kk]erala">
+    <datalist id="l2">
+      <option>Delhi</option>
+      <option>Ahmedabad</option>
+      <option>Chhatisgarh</option>
+      <option>Punjab</option>
+      <option>Uttrakhand</option>
+      <option>Kerala</option>
+    </datalist>
+  </p>
+
+  <form>
+  <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <br>  
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+</form>
+
+
+
+  <p>
+    <label for="t2">What's your e-mail address?</label>
+    <input type="email" id="t2" name="email" autocomplete="off">
+  </p>
+  <p>
+    <label for="t3">Leave a short message</label>
+    <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+  </p>
+  <p>
+    <button>Submit</button>
+  </p>
+</form>
